@@ -1,4 +1,5 @@
 # Project Overview: R-S Job Portal
+<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/77144f8a-57cc-42f0-b083-24fdcd98aa36" />
 
 This project is a web-based Job Portal application developed using raw HTML, CSS, JavaScript, PHP, and MySQL. The portal enables users to register, log in, post jobs (for employers), and apply for jobs (for applicants). It also provides features for managing job applications and user authentication.
 
