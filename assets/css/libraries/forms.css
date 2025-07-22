@@ -1,0 +1,21 @@
+.label {
+    font-weight: 600;
+    color: #647787;
+    display: inline-block;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #2e3b45;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #121c22;
+    color: #9fb9d0;
+}
+
+.input:focus {
+    border-color: #3b82f6;
+}

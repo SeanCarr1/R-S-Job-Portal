@@ -1,0 +1,16 @@
+/* ===== colors.css ===== */
+.bg-base-200 {
+    background-color: #0e171e;
+}
+
+.border-base-300 {
+    border-color: #2e3b45;
+}
+
+.text-gray-100 {
+    color: #99a3aa;
+}
+
+.text-white-100 {
+    color: #ecf9ff;
+}

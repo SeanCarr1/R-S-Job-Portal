@@ -1,0 +1,9 @@
+/* ===== border.css ===== */
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.rounded-box {
+    border-radius: 0.75rem;
+}

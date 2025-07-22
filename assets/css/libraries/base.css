@@ -1,0 +1,78 @@
+/* ===== base.css ===== */
+
+:root {
+  --color-primary: oklch(58% 0.233 277.117);
+  --color-secondary: oklch(65% 0.241 354.308);
+  --color-accent: oklch(77% 0.152 181.912);
+  --color-neutral: oklch(14% 0.005 285.823);
+  --color-base-100: oklch(25.33% 0.016 252.42);
+  --color-base-200: oklch(23.26% 0.014 253.1);
+  --color-base-300: oklch(21.15% 0.012 254.09);
+  --color-info: oklch(74% 0.16 232.661);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-error: oklch(76% 0.177 163.223);
+  --color-text: oklch(97.807% 0.029 256.847);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+  font-family: 'InterVariable', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-base-300);
+  color: var(--color-text);
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  max-width: 1440px;
+  padding: 0 4rem;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+
+/* Tablet layout: 8 columns */
+@media (max-width: 1024px) {
+  body {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 16px;
+    max-width: 768px;
+    padding: 1rem;
+  }
+}
+
+/* Mobile layout: 4 columns */
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+@font-face {
+  font-family: 'InterVariable';
+  src: url('../../fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'InterVariable';
+  src: url('../../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+}

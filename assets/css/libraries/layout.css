@@ -1,0 +1,16 @@
+/* ===== layout.css ===== */
+.w-xs {
+    width: 20rem;
+}
+
+.w-md {
+    width: 28rem;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.inline-block {
+    display: inline-block;
+}

@@ -1,0 +1,196 @@
+@import url('../../assets/css/libraries/index.css');
+
+/* General page/grid settings */
+html, body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  max-width: 100%;
+}
+
+/* Hero Section Styles */
+.homepage-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  background: url('images/pexels-goumbik-574071.jpg') center center/cover no-repeat;
+  z-index: 1;
+  box-shadow: 0 0 0 60vmax rgba(14,23,30,0.7) inset;
+}
+.homepage-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(14,23,30,0.7);
+  z-index: 2;
+}
+.homepage-hero > * {
+  position: relative;
+  z-index: 3;
+}
+.homepage-headline {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ecf9ff;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 16px #000a;
+}
+.homepage-subheadline {
+  font-size: 1.5rem;
+  color: #99a3aa;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  text-shadow: 0 2px 16px #000a;
+}
+.homepage-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.homepage-cta .btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+}
+
+/* Divider between hero and features */
+.divider {
+  border: none;
+  border-top: 2px solid #2e3b45;
+  margin: 0 auto 3rem auto;
+  width: 100%;
+  opacity: 0.7;
+}
+
+/* Features Section */
+.features-section {
+  margin-bottom: 3rem;
+}
+.features-title {
+  color: #ecf9ff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+.features-desc {
+  color: #99a3aa;
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.feature-card {
+  background: #121c22;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 220px;
+}
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.feature-title {
+  color: #ecf9ff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.feature-desc {
+  color: #b8c7ce;
+  font-size: 1rem;
+}
+
+/* Related Articles Section */
+.related-section {
+  margin-bottom: 3rem;
+}
+.related-title {
+  color: #ecf9ff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.related-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+.related-card {
+  background: #121c22;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
+}
+.related-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background: #222;
+}
+.related-content {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.related-article-title {
+  color: #ecf9ff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.related-article-desc {
+  color: #b8c7ce;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.related-link {
+  color: #3b82f6;
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-top: auto;
+  transition: color 0.2s;
+}
+.related-link:hover {
+  color: #2563eb;
+}
+
+/* Ensure all main homepage sections use the global grid */
+.homepage-hero,
+.divider,
+.features-section,
+.related-section {
+  grid-column: 2 / span 10;
+}
+
+@media (max-width: 1024px) {
+  .homepage-hero,
+  .divider,
+  .features-section,
+  .related-section {
+    grid-column: 1 / span 8;
+  }
+}
+@media (max-width: 768px) {
+  .homepage-hero,
+  .divider,
+  .features-section,
+  .related-section {
+    grid-column: 1 / span 4;
+  }
+}

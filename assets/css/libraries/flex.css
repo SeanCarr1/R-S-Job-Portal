@@ -1,0 +1,8 @@
+/* ===== flex.css ===== */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.flex-row-reverse { flex-direction: row-reverse; }

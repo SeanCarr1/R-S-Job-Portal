@@ -1,0 +1,83 @@
+@import url('../../assets/css/libraries/index.css');
+
+
+
+h1, h2 {
+  color: var(--color-text);
+}
+
+/* Remove any grid or grid-template-columns from #registration-form or body. Use grid-column for layout if needed. */
+
+#registration-form {
+    grid-column:  span 6;
+    background: var(--color-base-300);
+    color: var(--color-text);
+}
+
+#registration-banner {
+    grid-column: span 6;
+    display: flex;
+    align-items: stretch;
+    background: linear-gradient(#6274e7, #8752a3);
+    padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+  #registration-form {
+    grid-column: 2 / span 6; /* full width */
+  }
+  #registration-banner {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #registration-form {
+    grid-column: 1 / span 4; /* full width */
+  }
+}
+
+
+#registration-banner > div {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 100%;
+}
+#registration-banner .registration-banner-item {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+#registration-banner img {
+    width: 300px;
+}
+#registration-banner div {
+    /* position: absolute; */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#registration-banner div div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#registration-banner div p {
+    color: var(--color-text);
+}
+.registration-title, .registration-headline {
+  color: var(--color-text);
+}
+
+.registration-link {
+  color: var(--color-accent);
+}
+.registration-link:hover {
+  color: var(--color-primary);
+}
