@@ -1,7 +1,8 @@
-<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/d2a96bd6-57a2-4269-899f-079237551018" /># Carr Tech Crunch
+# Carr Tech Crunch
 
 Carr Tech Crunch is an interactive web platform for learning programming concepts, practicing coding exercises, and tracking your progress. Users can register, log in, complete tutorials, comment on articles, and view their achievements on a personalized profile page.
 ![Uploading image.png…]()
+
 
 ## Features
 
