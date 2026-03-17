@@ -20,5 +20,3 @@ This project is a web-based Job Portal application developed using raw HTML, CSS
 - MySQL (database)
 - Git (version control)
 
----
-This summary can be used as a starting point for a detailed README file.
